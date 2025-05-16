@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "flash-openocd",
+            "command": "${workspaceRoot}/flash.sh",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "build-debug",
+            "command": "${workspaceRoot}/build.sh debug",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "build-release",
+            "command": "${workspaceRoot}/build.sh release",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "test",
+            "command": "${workspaceRoot}/test.sh",
+            "problemMatcher": []
+        }
+    ]
+}

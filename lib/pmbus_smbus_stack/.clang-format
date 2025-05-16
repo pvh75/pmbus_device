@@ -1,0 +1,25 @@
+############################################################
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html #
+############################################################
+
+BasedOnStyle: Chromium
+
+ColumnLimit: 100
+IndentWidth: 4
+
+SpacesBeforeTrailingComments: 4
+ConstructorInitializerIndentWidth: 4
+AccessModifierOffset: -2
+
+AlwaysBreakBeforeMultilineStrings: false
+
+BinPackArguments: false
+BinPackParameters: false
+
+IndentPPDirectives: AfterHash
+UseTab: Never
+AllowShortIfStatementsOnASingleLine: false
+
+ContinuationIndentWidth: 8
+
+AlignConsecutiveMacros: true

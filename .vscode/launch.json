@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "OpenOCD",
+            "type": "cortex-debug",
+            "cwd": "${workspaceRoot}",
+            "device": "STM32H743ZI6U",
+            "executable": "${workspaceRoot}/build/Debug/pmbus_device_h7.elf",
+            "armToolchainPath": "${workspaceRoot}/../arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi/bin",
+            "servertype": "openocd",
+            "interface": "swd",
+            "request": "launch",
+            "svdFile": "${workspaceRoot}/STM32H743.svd",
+            // "runToEntryPoint": "reset_handler",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32h7x.cfg"
+            ],
+            "showDevDebugOutput": "raw",
+            "preLaunchTask": "build-debug",
+        }
+    ]
+}
